@@ -60,16 +60,6 @@
                     return;
                 }
                 ctx.fillStyle = COLOR_ARRAY[turn];//赤：コマの色
-                ctx.beginPath();
-                ctx.arc(
-                    x0,          //x座標
-                    y0,          //y座標
-                    50,          //半径
-                    0,           //円開始
-                    Math.PI * 2, //円終了
-                    true         //反時計周り
-                );
-                ctx.fill();
 
                 field[y][x] = turn;
                 ctx.beginPath();
